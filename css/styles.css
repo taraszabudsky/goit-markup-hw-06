@@ -4,28 +4,6 @@
 h1, h2, h3, p {
   margin: 0;
 }
-/* MOBILE */
-@media (min-width: 320px){
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #FFFFFF;
-  color: #434455;
-  line-height: 1.5;        
-  letter-spacing: 0.02em;  
-}
-}
-
-/* MOBILE first */
-
-/* TABLET */
-@media (min-width: 768px){
-
-}
-
-/* TABLET */
-
-  /* DESKTOP */
-@media (min-width: 1158px){
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #FFFFFF;
@@ -891,5 +869,3 @@ input:checked + .checkbox-point {
 .modal-submit:focus {
   background-color: #404BBF;
  }
-}
-/* DESKTOP */
