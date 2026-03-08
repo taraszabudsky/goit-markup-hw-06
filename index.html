@@ -33,7 +33,12 @@
   </ul>
   </address>
 <div>
-  <a href="#modal-header-mobile" class="header-button">
+  <a href="#modal-header-mobile" class="mobile-button" aria-label="open mobile menu">
+    <button type="button" class="mobile-button" aria-label="open mobile menu">
+    <svg width="16" height="14">
+      <use href="./images/icons.svg#menu-header-mobile"></use>
+    </svg>
+  </button>
 </a>
 </div>
   </div>
@@ -450,11 +455,26 @@
 <!-- кнопка в хедері(мобільна версія) -->
 
 <div id="modal-header-mobile" class="header-backdrop">
-  <button type="button" class="mobile-button" aria-label="open mobile menu">
-    <svg width="16" height="14">
-      <use href="./images/icons.svg#menu-header-mobile"></use>
-    </svg>
-  </button>
+<nav>
+    <ul class="nav-list-mobile">
+    <li><a class="nav-link-mobile active" href="#">Studio</a></li>
+    <li><a class="nav-link-mobile" href="#">Portfolio</a></li>
+    <li><a class="nav-link-mobile" href="#">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <address>
+    <ul class="address-list-mobile">
+    <li>
+      <a class="address-contact-mobile" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    </li>
+    <li>
+      <a class="address-contact-mobile" href="tel:+110001111111">+11 (000) 111-11-11</a>
+    </li>
+  </ul>
+  </address>
+   <a href="#" class="close-menu-mobile" aria-label="close mobile menu">x</a>
+</div>
 </div>
 
 <!-- кнопка в хедері(мобільна версія) -->
