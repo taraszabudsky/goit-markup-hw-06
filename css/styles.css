@@ -23,7 +23,6 @@ body {
   line-height: 1.5;        
   letter-spacing: 0.02em;  
 }
-@media (min-width: 320px){
 .container{
   width: 100%;
   max-width: 320px;
@@ -251,7 +250,6 @@ body {
   margin: 0;
 }
 .feature-icon-wrapper {
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;      
@@ -288,7 +286,7 @@ body {
 .portfolio ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -849,7 +847,6 @@ input:checked + .checkbox-point {
   color: #fff;
   text-decoration: none;
 }
-}
  /* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ MOBILE ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
 
  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓TABLET↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
@@ -875,6 +872,9 @@ input:checked + .checkbox-point {
   padding: 0;
   position: relative;
   display: none;
+}
+.feature-icon-wrapper{
+  display: flex;
 }
  /*
 .address-list {
