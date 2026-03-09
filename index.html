@@ -390,11 +390,11 @@
 
 <div id="modal" class="backdrop">
   <div class="modal">
-    <button type="button" class="modal-close-btn" aria-label="Close modal">
+    <a href="#" class="modal-close-btn" aria-label="Close modal">
   <svg width="8" height="8">
     <use href="./images/icons.svg#close"></use>
   </svg>
-</button>
+</a>
     <p class="modal-title">Leave your contacts and we will call you back</p>
     <form>
   <div class="modal-form">
@@ -454,27 +454,24 @@
 
 <!-- кнопка в хедері(мобільна версія) -->
 
-<div id="modal-header-mobile" class="header-backdrop">
-<nav>
+<div class="header-backdrop">
+  <nav>
     <ul class="nav-list-mobile">
-    <li><a class="nav-link-mobile active" href="#">Studio</a></li>
-    <li><a class="nav-link-mobile" href="#">Portfolio</a></li>
-    <li><a class="nav-link-mobile" href="#">Contacts</a></li>
+      <li><a class="nav-link-mobile" href="#">Studio</a></li>
+      <li><a class="nav-link-mobile" href="#">Portfolio</a></li>
+      <li><a class="nav-link-mobile" href="#">Contacts</a></li>
     </ul>
   </nav>
 
   <address>
     <ul class="address-list-mobile">
-    <li>
-      <a class="address-contact-mobile" href="mailto:info@devstudio.com">info@devstudio.com</a>
-    </li>
-    <li>
-      <a class="address-contact-mobile" href="tel:+110001111111">+11 (000) 111-11-11</a>
-    </li>
-  </ul>
+      <li><a class="address-contact-mobile" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      <li><a class="address-contact-mobile" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+    </ul>
   </address>
-   <a href="#" class="close-menu-mobile" aria-label="close mobile menu">x</a>
-</div>
+
+  <!-- кнопка закриття -->
+  <label for="menu-toggle" class="close-menu-mobile" aria-label="close mobile menu">×</label>
 </div>
 
 <!-- кнопка в хедері(мобільна версія) -->
