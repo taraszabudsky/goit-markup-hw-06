@@ -1159,7 +1159,6 @@ color: #434455;
     padding: 0 15px;
   }
 
-  /* ---------- HEADER ---------- */
   .header .container {
     display: flex;
     justify-content: space-between;
@@ -1211,7 +1210,6 @@ color: #434455;
     display: none;
   }
 
-  /* ---------- HERO ---------- */
   .hero-section {
     padding: 188px 0;
   }
@@ -1227,37 +1225,34 @@ color: #434455;
     border-radius: 4px;
   }
 
-  /* ---------- FEATURES ---------- */
  .features ul {
     display: flex;
-    flex-wrap: nowrap;      /* щоб елементи не переносились на новий ряд */
-    gap: 24px;              /* відстань між елементами */
-    justify-content: space-between; /* або flex-start / center за бажанням */
+    flex-wrap: nowrap;    
+    gap: 24px;              
+    justify-content: space-between; 
   }
 
   .features li {
-    width: calc(100% / 3 - 16px); /* по 3 елементи на ряд, можна змінити на 4, якщо потрібно */
+    width: calc(100% / 3 - 16px); 
     box-sizing: border-box;
   }
   .feature-icon-wrapper {
     display: flex;
   }
 
-  /* ---------- PORTFOLIO ---------- */
   .portfolio ul {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    justify-content: space-between; /* або center, якщо хочеш вирівняти по центру */
+    justify-content: space-between;
   }
 
   .portfolio li {
-    width: calc(33.333% - 16px); /* 3 елементи в ряд з відступом */
+    width: calc(33.333% - 16px);
     box-sizing: border-box;
     margin-bottom: 24px;
   }
 
-  /* ---------- TEAM ---------- */
   .team ul {
     display: flex;
     flex-wrap: wrap;
@@ -1268,7 +1263,6 @@ color: #434455;
     max-width: 32%;
   }
 
-  /* ---------- FOOTER ---------- */
   .footer .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1331,7 +1325,6 @@ color: #434455;
     margin-bottom: 0;
   }
 
-  /* ---------- CHECKBOX ---------- */
   .checkbox-privacy {
     display: flex;
     align-items: center;
