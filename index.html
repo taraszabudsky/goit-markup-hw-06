@@ -14,32 +14,29 @@
 
 <header class="header">
   <div class="container">
+    <a href="#" class="logo">WEB<span class="logo-part">STUDIO</span></a>
 
-    <a href="#" class="logo"><span class="logo-part">Web</span>Studio</a>
-
-    <nav class="nav-wrapper">
-      <ul class="nav-list">
-        <li><a href="#">Studio</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contacts</a></li>
+    <nav class="nav-list">
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#team">Team</a></li>
       </ul>
     </nav>
-
-    <address>
-      <ul class="address-list">
-        <li><a class="address-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="address-contact" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-      </ul>
-    </address>
-
-   <label for="mobile-toggle" class="mobile-button">
-  <svg width="24" height="24" aria-label="Open menu">
-    <use href="./images/icons.svg#menu-header-mobile"></use>
-  </svg>
-</label>
-
+    <ul class="address-list">
+      <li><a href="tel:+380123456789">+38 012 345 67 89</a></li>
+      <li><a href="mailto:info@example.com">info@example.com</a></li>
+    </ul>
   </div>
+
+<button type="button" class="mobile-button" aria-label="Open menu">
+  <svg>
+    <use href="/images/icons.svg#"></use>
+  </svg>
+</button>
+
 </header>
+
 
 <main>
   <section class="hero-section">
@@ -450,28 +447,17 @@
   </div>
 </div>
 
-<input type="checkbox" id="mobile-toggle" class="visually-hidden">
-
-<div class="mobile-menu">
-  <label for="mobile-toggle" class="backdrop"></label>
-
-  <div class="mobile-menu-content">
-    <label for="mobile-toggle" class="close-menu-mobile">
-      <svg width="8" height="8" aria-label="Close menu">
-        <use href="./images/icons.svg#close"></use>
-      </svg>
-    </label>
-
-    <ul class="nav-list-mobile">
-      <li><a href="#" class="nav-link-mobile">Studio</a></li>
-      <li><a href="#" class="nav-link-mobile">Portfolio</a></li>
-      <li><a href="#" class="nav-link-mobile">Contacts</a></li>
-    </ul>
-
-    <ul class="address-list-mobile">
-      <li><a href="tel:+110001111111" class="address-contact-mobile">+11 (000) 111-11-11</a></li>
-      <li><a href="mailto:info@devstudio.com" class="address-contact-mobile">info@devstudio.com</a></li>
-    </ul>
+<div id="mobile-menu" class="mobile-menu">
+  <a href="#" class="close-menu-mobile" aria-label="close menu"></a>
+  <ul class="nav-list-mobile">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#team">Team</a></li>
+  </ul>
+  <ul class="address-list-mobile">
+    <li><a href="tel:+380123456789">+38 012 345 67 89</a></li>
+    <li><a href="mailto:info@example.com">info@example.com</a></li>
+  </ul>
 
     <ul class="social-list-mobile">
       <li><a href="#" class="header-icon"><svg width="24" height="24"><use href="./images/icons.svg#instagram"></use></svg></a></li>
@@ -480,7 +466,6 @@
       <li><a href="#" class="header-icon"><svg width="24" height="24"><use href="./images/icons.svg#linkedin"></use></svg></a></li>
     </ul>
   </div>
-</div>
 
 </body>
 </html>
