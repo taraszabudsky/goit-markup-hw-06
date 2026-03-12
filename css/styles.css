@@ -30,10 +30,11 @@ body {
   margin: 0 auto;
 }
 .header .container {
-  height: 56px;
   display: flex;
   align-items: center;
-  gap: 55px;
+  justify-content: space-between;
+  padding: 0 16px; 
+  height: 56px;
 }
 .header{
   border-bottom: 1px solid #e7e9fc;
@@ -43,11 +44,8 @@ body {
 }
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #2E2F42;
   text-decoration: none;
 }
@@ -63,7 +61,7 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 40px 16px 60px;
-  max-width: 1200px; 
+  max-width: 100%; 
   background-image:
     linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -86,14 +84,14 @@ body {
   }
 }
 .hero-title {
-  font-size: 56px;
+  font-size: 32px;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: #FFFFFF;
   text-align: center;
-  margin: 0 auto 48px;
-  max-width: 496px;
+  margin: 0 auto 32px;
+  max-width: 280px;
 }
 .hero-button {
   width: 169px;
@@ -123,7 +121,7 @@ body {
   background-color: #F4F4FD;
   width: 100%;
   margin: 0% auto;
-  padding: 60px 16px;
+  padding: 96px 0;
 }
 .team-wrapper{
   padding: 16px;
@@ -214,10 +212,7 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #4d5ae5;
 }
-.features{
-  padding: 120px 0;
-  
-}
+
 /* visual hidden  */
 
 .visually-hidden {
@@ -235,17 +230,21 @@ body {
 
 /* visual hidden  */
 
-
+.features{
+  padding: 60px 16px;
+  
+}
 .features ul{   
   display: flex;
   justify-content: flex-start; 
+  flex-direction: column;
   flex-wrap: wrap; 
-  gap: 60px; 
+  gap: 24px; 
   padding: 0;
   list-style: none;
 }
 .features li {
-  width: 264px; 
+  width: 100%; 
   background-color: #fff;
   text-align: left; 
   box-sizing: border-box;
@@ -503,7 +502,7 @@ text-align: center;
   flex-direction: column;
   align-items: stretch; 
   width: 100%;
-  gap: 12px;
+  gap: 16px;
 }
 .input-email{
   width: 288px;       
@@ -593,11 +592,11 @@ text-align: center;
   visibility: visible;
   pointer-events: auto;
 }
-#modal:target {
+/* #modal:target {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-}
+} */
 .modal {
  width: 288px;
   min-height: 623px;
@@ -823,11 +822,25 @@ input:checked + .checkbox-point {
   opacity: 0;
   pointer-events: none;
   display: flex;
-  justify-content: center;
-  transition: background-color 0.3 ms cubic-bezier(0.4, 0, 0.2, 1);;
+  justify-content: flex-start;
+  transition: background-color 0.3 ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 9999;
 }
+.mobile-menu .mobile-menu-content {
+    width: 100%;      
+    height: 100%;       
+    padding: 60px 16px; 
+  }
 
+.mobile-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
 #mobile-toggle:checked ~ .mobile-menu {
   opacity: 1;
   pointer-events: auto;
@@ -844,13 +857,18 @@ input:checked + .checkbox-point {
   position: relative;
   width: 288px;
   height: 100%;
-  background: #fff;
+  background: #FFFFFF;
   padding: 32px;
   display: flex;
   flex-direction: column;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
   z-index: 10;
+}
+
+#mobile-toggle:checked ~ .mobile-menu {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 #mobile-toggle:checked ~ .mobile-menu .mobile-menu-content {
@@ -929,6 +947,9 @@ input:checked + .checkbox-point {
 .header-icon svg {
   fill: #FFFFFF;
 }
+.mobile-button{
+  margin-right: auto;
+}
  /* КНОПКА В ХЕДЕРІ */
 
 
@@ -941,7 +962,7 @@ input:checked + .checkbox-point {
     width: 100%;
     max-width: 768px;
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 16px;
   }
   .header .container {
     display: flex;
@@ -997,7 +1018,8 @@ input:checked + .checkbox-point {
   }
 
   .hero-section {
-    padding: 60px 32px 80px;
+    padding: 60px 16px 80px;
+    max-width: 100%;
   }
 
   .hero-title {
@@ -1024,7 +1046,9 @@ input:checked + .checkbox-point {
   .hero-button:focus {
     background-color: #404BBF;
   }
-
+  .features {
+    padding: 80px 16px;
+  }
   .features ul {
     display: flex;
     flex-wrap: wrap;
@@ -1121,7 +1145,7 @@ input:checked + .checkbox-point {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
     width: 100%;
     max-width: 320px;
   }
@@ -1164,7 +1188,7 @@ input:checked + .checkbox-point {
  .container {
     max-width: 1158px;
     margin: 0 auto;
-    padding: 0 64px;
+    padding: 0 15px;
   }
 
   .header .container {
@@ -1219,7 +1243,10 @@ input:checked + .checkbox-point {
   }
 
   .hero-section {
-    padding: 80px 64px 100px;
+    max-width: 1440px;
+    padding: 80px 15px 100px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .hero-title {
     font-size: 72px;
@@ -1232,7 +1259,9 @@ input:checked + .checkbox-point {
     font-size: 18px;
     border-radius: 4px;
   }
-
+.features {
+    padding: 120px 0; 
+  }
  .features ul {
     display: flex;
     flex-wrap: nowrap;    
@@ -1241,7 +1270,7 @@ input:checked + .checkbox-point {
   }
 
   .features li {
-    width: calc(100% / 3 - 16px); 
+    width: calc((100% - 72px) / 4); 
     box-sizing: border-box;
   }
   .feature-icon-wrapper {
