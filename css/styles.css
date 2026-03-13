@@ -60,7 +60,7 @@ body {
 .hero-section {
  background-color: #2E2F42;
   text-align: center;
-  padding: 80px 16px;        
+  padding: 112px 16px;        
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url("../images/people-office-1.jpg");
@@ -85,9 +85,8 @@ body {
   line-height: 1.11;                 
   letter-spacing: 0.02em;
   color: #FFFFFF;
-  margin: 0 auto; 
-  margin-bottom: 24px;              
-  max-width: 100%;
+  margin: 0 auto 72px;            
+  max-width: 216px;
 }
 .hero-button {
   width: 169px;
@@ -117,7 +116,7 @@ body {
   background-color: #F4F4FD;
   width: 100%;
   margin: 0% auto;
-  padding: 120px 16px;
+  padding: 80px 16px;
   
 }
 .team-wrapper{
@@ -229,7 +228,7 @@ body {
 /* visual hidden  */
 
 .features{
-  padding: 60px 16px;
+  padding: 96px 16px;
   
 }
 .features ul{   
@@ -237,7 +236,7 @@ body {
   justify-content: flex-start; 
   flex-direction: column;
   flex-wrap: wrap; 
-  gap: 96px; 
+  gap: 72px; 
   padding: 0;
   list-style: none;
 }
@@ -403,8 +402,8 @@ body {
   color: #f4f4fd;
   font-size: 16px;
   width: 100%;
-  gap: 16px;
-  padding: 40px 16px;
+  gap: 32px;
+  padding: 64px 16px;
   text-align: left;
 }
 .footer .container {
@@ -848,7 +847,7 @@ input:checked + .checkbox-point {
 
 .mobile-menu-content {
   position: relative;
-  width: 288px;
+  width: 100%px;
   height: 100%;
   background: #FFFFFF;
   padding: 32px;
@@ -963,7 +962,7 @@ input:checked + .checkbox-point {
     letter-spacing: 0.02em;
     /* text-align: center; */
     flex-direction: row;
-    margin-left: auto;
+    margin-left: 120px;
   }
   .nav-list ul{
   display: flex;
@@ -986,7 +985,7 @@ input:checked + .checkbox-point {
   }
 
   .address-list {
-    display: flex;
+    display: block;
     flex-direction: column;
     text-align: right;
     gap: 12px;
@@ -1008,7 +1007,7 @@ input:checked + .checkbox-point {
   }
 
   .hero-section {
-    padding: 100px 32px; 
+    padding: 112px 0; 
     max-width: 100%;
   }
 
@@ -1016,7 +1015,7 @@ input:checked + .checkbox-point {
      font-size: 48px;                 
     line-height: 1.1;
     max-width: 496px;
-    margin-bottom: 32px;   
+    margin-bottom: 36px;   
   }
 
   .hero-button {
@@ -1037,7 +1036,7 @@ input:checked + .checkbox-point {
     background-color: #404BBF;
   }
   .features {
-    padding: 100px 32px;
+    padding: 96px 16px;
     
   }
 
@@ -1050,7 +1049,7 @@ input:checked + .checkbox-point {
   }
 
   .features li {
-    width: calc(50% - 12px); 
+    width: calc((100% - 24px) / 2); 
     box-sizing: border-box;
     text-align: left; 
   }
@@ -1115,7 +1114,7 @@ input:checked + .checkbox-point {
   height: auto;
 }
   .footer {
-    padding: 60px 80px;
+    padding: 80px 32px;
   }
 
   .footer .container {
@@ -1282,7 +1281,7 @@ input:checked + .checkbox-point {
   letter-spacing: 0.02em;
   color: #FFFFFF;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
   max-width: 496px;
   }
   .hero-button {
@@ -1310,13 +1309,13 @@ input:checked + .checkbox-point {
 }
   .features ul {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 24px;
     justify-content: space-between;
     flex-direction: row; 
   }
   .features li {
-    width: calc(25% - 18px); 
+     width: calc((100% - 72px) / 4); 
     box-sizing: border-box;
   }
 .features h3 {
@@ -1397,7 +1396,7 @@ input:checked + .checkbox-point {
   .footer .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 0 64px;
+    gap: 40px;
     align-items: start;
     text-align: left;
     max-width: 1158px;
@@ -1406,7 +1405,7 @@ input:checked + .checkbox-point {
   }
 
     .footer {
-    padding: 80px 80px;
+    padding: 100px 64px;
     text-align: center;
   }
 
@@ -1436,7 +1435,7 @@ input:checked + .checkbox-point {
     align-items: center;
     gap: 16px;
     width: 100%;
-    max-width: 100%;
+    /* max-width: 100%; */
   }
 
   .subscribe {
@@ -1449,7 +1448,7 @@ input:checked + .checkbox-point {
   }
 
   .input-email {
-    width: 264px;
+    width: 100%;               
   }
 
   .subscribe-button {
