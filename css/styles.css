@@ -60,7 +60,7 @@ body {
 .hero-section {
  background-color: #2E2F42;
   text-align: center;
-  padding: 118px 16px 118px;         
+  padding: 60px 0;        
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url("../images/people-office-1.jpg");
@@ -87,6 +87,7 @@ body {
   color: #FFFFFF;
   margin: 0 auto 40px;               
   max-width: 280px;
+  margin-bottom: 60px;
 }
 .hero-button {
   width: 169px;
@@ -116,10 +117,12 @@ body {
   background-color: #F4F4FD;
   width: 100%;
   margin: 0% auto;
-  padding: 96px 0;
+  padding: 120px 16px;
+  
 }
 .team-wrapper{
   padding: 16px;
+  
 }
 .team li {
   max-width: 264px;
@@ -226,7 +229,7 @@ body {
 /* visual hidden  */
 
 .features{
-  padding: 60px 16px;
+  padding: 120px 16px;
   
 }
 .features ul{   
@@ -234,7 +237,7 @@ body {
   justify-content: flex-start; 
   flex-direction: column;
   flex-wrap: wrap; 
-  gap: 24px; 
+  gap: 48px; 
   padding: 0;
   list-style: none;
 }
@@ -246,7 +249,7 @@ body {
 }
 .features h3 {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2E2F42;
@@ -261,7 +264,7 @@ body {
   color: #434455;
   margin: 0;
   font-weight: 400;
-  text-align: justify;
+  text-align: center;
 }
 .feature-icon-wrapper {
   display: none;
@@ -286,7 +289,7 @@ body {
   fill: #404BBF;
 }
 .portfolio {
-  padding: 120px 0;
+  padding: 80px 16px;
 }
 .portfolio h2 {
   font-size: 36px;
@@ -313,8 +316,8 @@ body {
   border-radius: 4px;
   overflow: hidden;
   position: relative;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: none; 
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 0;
 }
 
 .portfolio li:hover,
@@ -449,7 +452,6 @@ body {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   font-family: "Roboto", sans-serif;
-  margin-bottom:16px;
 text-align: center; 
 }
 .social-media h3 {
@@ -828,20 +830,14 @@ input:checked + .checkbox-point {
   }
 
 .mobile-button {
-  position: absolute;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: none;
-  border: none;
-  padding: 0;
   width: 40px;
   height: 40px;
+  background: none;
+  border: none;
   cursor: pointer;
+  margin-left: 0;
 }
 
 .mobile-menu .backdrop {
@@ -1021,7 +1017,7 @@ input:checked + .checkbox-point {
   }
 
   .hero-section {
-    padding: 118px 16px 118px; 
+     padding: 60px 0; 
     max-width: 100%;
   }
 
@@ -1029,7 +1025,7 @@ input:checked + .checkbox-point {
      font-size: 48px;                 
     line-height: 1.1;
     max-width: 496px;
-    margin-bottom: 48px;   
+    margin-bottom: 40px;   
   }
 
   .hero-button {
@@ -1050,14 +1046,14 @@ input:checked + .checkbox-point {
     background-color: #404BBF;
   }
   .features {
-    padding: 80px 16px;
+    padding: 160px 32px;
     
   }
 
   .features ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 48px 24px;
     justify-content: space-between;
     flex-direction: row; 
   }
@@ -1080,17 +1076,20 @@ input:checked + .checkbox-point {
   .feature-icon-wrapper {
     display: none;
   }
+  .portfolio {
+    padding: 100px 16px;
+  }
   .portfolio ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 48px 24px;
+    gap: 24px 24px;
     justify-content: center;
   }
 
   .portfolio li {
-    width: calc((100% - 48px) / 2);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 24px;
+    width: calc((100% - 24px) / 2);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 0;
   }
   .portfolio li:hover,
   .portfolio li:focus {
@@ -1359,12 +1358,15 @@ input:checked + .checkbox-point {
   width: 64px;
   height: 64px;
 }
-
+ .portfolio {
+    padding: 120px 0;
+  }
   .portfolio ul {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
     justify-content: space-between;
+    box-shadow: none;
   }
 
   .portfolio li {
@@ -1375,6 +1377,7 @@ input:checked + .checkbox-point {
   .portfolio li:hover .portfolio-overlay,
   .portfolio li:focus .portfolio-overlay {
     transform: translateY(0);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
   }
 
 .team{
