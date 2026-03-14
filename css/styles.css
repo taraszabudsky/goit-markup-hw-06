@@ -60,7 +60,7 @@ body {
 .hero-section {
  background-color: #2E2F42;
   text-align: center;
-  padding: 112px 16px;        
+  padding: 72px 16px 72px;         
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url("../images/people-office-1.jpg");
@@ -313,7 +313,7 @@ body {
   border-radius: 4px;
   overflow: hidden;
   position: relative;
- box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+ box-shadow: none;
   margin-bottom: 0;
 }
 
@@ -403,7 +403,7 @@ body {
   font-size: 16px;
   width: 100%;
   gap: 32px;
-  padding: 64px 16px;
+  padding: 80px 0;
   text-align: left;
 }
 .footer .container {
@@ -941,7 +941,7 @@ input:checked + .checkbox-point {
     width: 100%;
     max-width: 768px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 24px;
   }
   .header .container {
     
@@ -985,9 +985,9 @@ input:checked + .checkbox-point {
   }
 
   .address-list {
-    display: block;
+    display: flex;
     flex-direction: column;
-    text-align: right;
+    align-items: flex-end;   
     gap: 12px;
     color: #434455;
     margin-left: auto; 
@@ -1002,8 +1002,9 @@ input:checked + .checkbox-point {
   .address-list a:focus {
     color: #4D5AE5;
   }
-  .mobile-button {
-    display: none;
+  .mobile-button,
+  .mobile-menu {
+    display: none !important;
   }
 
   .hero-section {
@@ -1067,7 +1068,7 @@ input:checked + .checkbox-point {
     display: none;
   }
   .portfolio {
-    padding: 100px 16px;
+    padding: 80px 16px;
   }
   .portfolio ul {
     display: flex;
@@ -1079,7 +1080,7 @@ input:checked + .checkbox-point {
 
   .portfolio li {
     width: calc((100% - 24px) / 2);
-   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+   box-shadow: none;
     margin-bottom: 0;
   }
   .portfolio li:hover,
@@ -1091,7 +1092,7 @@ input:checked + .checkbox-point {
   }
   
   .team {
-    padding: 100px 24px;
+    padding: 80px 24px;
   }
 
   .team-wrapper {
@@ -1114,7 +1115,7 @@ input:checked + .checkbox-point {
   height: auto;
 }
   .footer {
-    padding: 80px 32px;
+    padding: 80px 0;
   }
 
   .footer .container {
@@ -1126,7 +1127,6 @@ input:checked + .checkbox-point {
     text-align: left;
     max-width: 768px;
     margin: 0 auto;
-    padding: 0;
   }
 
   .logo-footer-block {
@@ -1203,7 +1203,7 @@ input:checked + .checkbox-point {
  .container {
     max-width: 1158px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 32px;
   }
 
   .header .container {
@@ -1254,8 +1254,9 @@ input:checked + .checkbox-point {
   }
 
   .mobile-button,
-  .header-backdrop {
-    display: none;
+  .header-backdrop,
+  .mobile-menu {
+    display: none !important;
   }
 
   .hero-section {
@@ -1305,7 +1306,7 @@ input:checked + .checkbox-point {
     0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .features{
-  padding: 140px 0;
+  padding: 120px 0;
 }
   .features ul {
     display: flex;
@@ -1364,11 +1365,15 @@ input:checked + .checkbox-point {
     width: calc(33.333% - 16px);
     box-sizing: border-box;
     margin-bottom: 24px;
+    box-shadow: none;
   }
   .portfolio li:hover .portfolio-overlay,
   .portfolio li:focus .portfolio-overlay {
     transform: translateY(0);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    box-shadow:
+      0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 1px 6px rgba(46, 47, 66, 0.08);
   }
 
 .team{
@@ -1401,11 +1406,10 @@ input:checked + .checkbox-point {
     text-align: left;
     max-width: 1158px;
     margin: 0 auto;
-    padding: 0;
   }
 
     .footer {
-    padding: 100px 64px;
+    padding: 120px 0;
     text-align: center;
   }
 
