@@ -116,7 +116,7 @@ body {
   background-color: #F4F4FD;
   width: 100%;
   margin: 0% auto;
-  padding: 80px 16px;
+  padding: 120px 16px;
   
 }
 .team-wrapper{
@@ -243,7 +243,7 @@ body {
 .features li {
   width: 100%; 
   background-color: #fff;
-  text-align: center; 
+  text-align: left; 
   box-sizing: border-box;
 }
 .features h3 {
@@ -254,6 +254,7 @@ body {
   line-height: 40px;                 
   letter-spacing: 0.02em;           
   text-align: center;  
+  margin-bottom: 8px;
 }
 .features p {
   font-family: 'Roboto', sans-serif; 
@@ -262,6 +263,8 @@ body {
   font-size: 16px;                 
   line-height: 24px;              
   letter-spacing: 0.02em;  
+   text-align: left; 
+  margin: 0; 
 }
 .feature-icon-wrapper {
   display: none;
@@ -304,7 +307,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 48px;
+  gap: 32px;
 }
 
 .portfolio li {
@@ -412,7 +415,8 @@ body {
   align-items: start;
   text-align: center;
   gap: 48px;
-  padding: 0;
+  padding-left: 16px; 
+  padding-right: 16px;
 }
 .logo-footer-block {
   display:flex;
@@ -941,7 +945,7 @@ input:checked + .checkbox-point {
     width: 100%;
     max-width: 768px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 32px;
   }
   .header .container {
     
@@ -988,14 +992,18 @@ input:checked + .checkbox-point {
     display: flex;
     flex-direction: column;
     align-items: flex-end;   
-    gap: 12px;
+    
     color: #434455;
     margin-left: auto; 
+  }
+  .address-list ul{
+    gap: 12px; 
   }
   .address-list a {
     text-decoration: none;
     color: #434455;
     transition: color 0.2s;
+    font-size: 14px; 
   }
 
   .address-list a:hover,
@@ -1013,9 +1021,9 @@ input:checked + .checkbox-point {
   }
 
   .hero-title {
-     font-size: 48px;                 
-    line-height: 1.1;
-    max-width: 496px;
+     font-size: 36px;                 
+    line-height: 1.2;
+    max-width: 432px;
     margin-bottom: 36px;   
   }
 
@@ -1127,6 +1135,8 @@ input:checked + .checkbox-point {
     text-align: left;
     max-width: 768px;
     margin: 0 auto;
+    padding-left: 32px; 
+    padding-right: 32px;
   }
 
   .logo-footer-block {
@@ -1203,7 +1213,7 @@ input:checked + .checkbox-point {
  .container {
     max-width: 1158px;
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 80px;
   }
 
   .header .container {
@@ -1241,6 +1251,7 @@ input:checked + .checkbox-point {
   }
   .address-list ul{
   display: flex;
+  gap: 40px;
 }
   .address-list a {
     text-decoration: none;
@@ -1350,7 +1361,7 @@ input:checked + .checkbox-point {
   height: 64px;
 }
  .portfolio {
-    padding: 120px 0;
+    padding: 160px 0;
   }
   .portfolio ul {
     display: flex;
@@ -1364,15 +1375,12 @@ input:checked + .checkbox-point {
     width: calc(33.333% - 16px);
     box-sizing: border-box;
     margin-bottom: 24px;
-    box-shadow: none;
+    box-shadow: 0 8px 24px rgba(46, 47, 66, 0.12);
   }
   .portfolio li:hover .portfolio-overlay,
   .portfolio li:focus .portfolio-overlay {
     transform: translateY(0);
-    box-shadow:
-      0px 2px 1px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16),
-      0px 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow: 0 12px 32px rgba(46, 47, 66, 0.16);
   }
 
 .team{
@@ -1405,6 +1413,8 @@ input:checked + .checkbox-point {
     text-align: left;
     max-width: 1158px;
     margin: 0 auto;
+  padding-left: 64px; 
+    padding-right: 64px;
   }
 
     .footer {
