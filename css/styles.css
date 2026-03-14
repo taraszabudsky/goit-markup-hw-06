@@ -80,12 +80,14 @@ body {
   }
 }
 .hero-title {
-  font-size: 36px;                   
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  line-height: 1.11;                 
+  font-size: 36px;
+  line-height: 1.11;          
   letter-spacing: 0.02em;
   color: #FFFFFF;
-  margin: 0 auto 72px;            
+  text-align: center;
+  margin: 0 auto 72px auto;
   max-width: 216px;
 }
 .hero-button {
@@ -115,8 +117,8 @@ body {
 .team{
   background-color: #F4F4FD;
   width: 100%;
-  margin: 0% auto;
-  padding: 120px 16px;
+  margin: 0 auto;
+  padding: 96px 16px;
   
 }
 .team-wrapper{
@@ -124,7 +126,6 @@ body {
   
 }
 .team li {
-  max-width: 264px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
@@ -138,9 +139,10 @@ body {
     0 1px 6px rgba(46,47,66,0.08);
 }
 .team ul{
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .team-title{
   font-weight: 700;
@@ -169,45 +171,37 @@ body {
   margin-bottom: 8px;
   margin-top: 0;
 }
-.team .icons a.team-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #4d5ae5;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .team .icons a.team-icon:hover,
 .team .icons a.team-icon:focus {
   background-color: #404bbf;
 }
 
-.team .icons a.team-icon svg {
-  width: 16px;
-  height: 16px;
+.icons svg {
+  width: 20px;
+  height: 20px;
   fill: #f4f4fd;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons {
   display: flex;
-  gap: 24px;
-  list-style: none;
+  flex-wrap: nowrap;               
+  justify-content: center;
+  align-items: center;
+  gap: 12px;                     
+  margin: 16px auto 0;
   padding: 0;
-  margin: 0;
-  color: #F4F4FD;
+  list-style: none;
 }
- .icons a {
+
+.icons a {
   width: 40px;
   height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: #4d5ae5;
 }
 
 /* visual hidden  */
@@ -228,7 +222,7 @@ body {
 /* visual hidden  */
 
 .features{
-  padding: 96px 16px;
+  padding: 48px 16px;
   
 }
 .features ul{   
@@ -289,7 +283,7 @@ body {
   fill: #404BBF;
 }
 .portfolio {
-  padding: 80px 16px;
+  padding: 96px 16px;
 }
 .portfolio h2 {
   font-size: 36px;
@@ -307,7 +301,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 32px;
+  gap: 48px;
 }
 
 .portfolio li {
@@ -318,6 +312,7 @@ body {
   position: relative;
  box-shadow: none;
   margin-bottom: 0;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio li:hover,
@@ -414,7 +409,7 @@ body {
   flex-direction:column;
   align-items: start;
   text-align: center;
-  gap: 48px;
+  /* gap: 48px; */
   padding-left: 16px; 
   padding-right: 16px;
 }
@@ -422,7 +417,7 @@ body {
   display:flex;
   flex-direction:column;
   align-items:center;
-  gap:16px;
+   margin-bottom: 72px;
 }
 .logo-footer {
   font-family: 'Raleway', sans-serif;
@@ -445,8 +440,9 @@ body {
 .social-media {
   display:flex;
   flex-direction:column;
-  align-items:center;
-  gap:16px;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 72px;
 }
 .social-media-title {
   font-weight: 500;
@@ -455,7 +451,8 @@ body {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   font-family: "Roboto", sans-serif;
-text-align: center; 
+  text-align: center; 
+  margin-bottom: 16px;
 }
 .social-media h3 {
   font-weight: 500;
@@ -537,7 +534,7 @@ text-align: center;
   gap: 16px;
   width: 100%;
   max-width: 320px;
-  margin: 0 auto;
+  margin-bottom: 16px;
 }
 .subscribe-button{ 
   width: 165px;
@@ -1016,15 +1013,15 @@ input:checked + .checkbox-point {
   }
 
   .hero-section {
-    padding: 112px 0; 
+    padding: 112px 0 112px;
     max-width: 100%;
   }
 
   .hero-title {
-     font-size: 36px;                 
-    line-height: 1.2;
-    max-width: 432px;
-    margin-bottom: 36px;   
+    font-size: 56px;        
+    line-height: 1.07;             
+    max-width: 496px;              
+    margin-bottom: 48px;   
   }
 
   .hero-button {
@@ -1052,7 +1049,7 @@ input:checked + .checkbox-point {
   .features ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 64px 24px;
+    gap: 48px 24px;
     justify-content: space-between;
     flex-direction: row; 
   }
@@ -1076,12 +1073,12 @@ input:checked + .checkbox-point {
     display: none;
   }
   .portfolio {
-    padding: 80px 16px;
+    padding: 72px 24px;
   }
   .portfolio ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 48px 24px;
+    gap: 72px 24px;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr); 
   }
@@ -1100,7 +1097,7 @@ input:checked + .checkbox-point {
   }
   
   .team {
-    padding: 80px 24px;
+    padding: 96px 24px;
   }
 
   .team-wrapper {
@@ -1110,12 +1107,15 @@ input:checked + .checkbox-point {
   .team ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
     justify-content: center;
   }
-
+ .icons {
+    gap: 24px;                   
+    max-width: none;           
+  }
   .team li {
-    max-width: calc(50% - 12px);
+    max-width: calc((100% - 24px) / 2);
     /* margin-bottom: 24px; */
   }
 .team img {
@@ -1128,15 +1128,14 @@ input:checked + .checkbox-point {
 
   .footer .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;  
-    grid-template-rows: auto auto;  
-    gap: 32px 40px;                
+    grid-template-columns: 264px 264px;              
     align-items: start;
     text-align: left;
     max-width: 768px;
     margin: 0 auto;
     padding-left: 32px; 
     padding-right: 32px;
+    gap: 24px;
   }
 
   .logo-footer-block {
@@ -1144,45 +1143,39 @@ input:checked + .checkbox-point {
     grid-row: 1;
     display: flex;
     flex-direction: column;
-    gap: 16px;
     align-items: flex-start;
   }
-
+.logo-footer-block p{
+    width: 264px;
+  }
   .social-media {
-    grid-column: 2;
-    grid-row: 1;
     display: flex;
-    flex-direction: column;
-    gap: 16px;
     align-items: flex-start;
   }
 
-  .address-footer {
+  /* .address-footer {
     display: flex;
     flex-direction: column;
     gap: 8px;
-  }
+  } */
 
   .form-group {
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 24px;
-    width: 100%;
-    max-width: none;
   }
   .subscribe {
     display: flex;               
     flex-direction: row;        
     align-items: center;        
-    justify-content: flex-start;    
-    gap: 24px;                 
+    justify-content: flex-start;                    
     margin: 0;   
   }
+  .email-form{
+    width: 453px;
+  }
    .input-email {
-    width: 264px;
-    flex: 1 1 auto;    
-    min-width: 0;
+    max-width: 100%;
   }
   .subscribe-button {
     padding: 8px 24px;
@@ -1213,7 +1206,7 @@ input:checked + .checkbox-point {
  .container {
     max-width: 1158px;
     margin: 0 auto;
-    padding: 0 80px;
+    padding: 0 16px;
   }
 
   .header .container {
@@ -1361,7 +1354,7 @@ input:checked + .checkbox-point {
   height: 64px;
 }
  .portfolio {
-    padding: 160px 0;
+    padding: 40px 24px;
   }
   .portfolio ul {
     display: flex;
@@ -1374,20 +1367,27 @@ input:checked + .checkbox-point {
   .portfolio li {
     width: calc(33.333% - 16px);
     box-sizing: border-box;
-    margin-bottom: 24px;
+    margin-bottom: 0;
     box-shadow: 0 8px 24px rgba(46, 47, 66, 0.12);
   }
-  .portfolio li:hover .portfolio-overlay,
+  /* .portfolio li:hover .portfolio-overlay,
   .portfolio li:focus .portfolio-overlay {
     transform: translateY(0);
     box-shadow: 0 12px 32px rgba(46, 47, 66, 0.16);
+  } */
+  .portfolio li:hover,
+  .portfolio li:focus {
+    box-shadow: 
+      0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 1px 6px rgba(46, 47, 66, 0.08);
   }
 
 .team{
   background-color: #F4F4FD;
   width: 100%;
   margin: 0% auto;
-  padding: 120px 16px;
+  padding: 120px 0;
 }
  .team-wrapper{
   padding: 32px 16px;
@@ -1408,7 +1408,7 @@ input:checked + .checkbox-point {
   .footer .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
+    gap: 80px;
     align-items: start;
     text-align: left;
     max-width: 1158px;
@@ -1428,6 +1428,12 @@ input:checked + .checkbox-point {
     gap: 16px;
     align-items: flex-start;
   }
+  .logo-footer-block{
+    margin-bottom: 72px;
+  }
+   .logo-footer-block p{
+    width: 264px;
+  }
 
   .social-media {
     display: flex;
@@ -1446,22 +1452,13 @@ input:checked + .checkbox-point {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 16px;
+    /* gap: 24px; */
     width: 100%;
     /* max-width: 100%; */
   }
 
-  .subscribe {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 24px;
-    width: 100%;
-  }
-
-  .input-email {
-    width: 100%;               
+  .email-form {
+    margin-bottom: 132px;
   }
 
   .subscribe-button {
@@ -1471,7 +1468,7 @@ input:checked + .checkbox-point {
   }
   .subscribe-title {
     text-align: left;
-    margin-bottom: 0;
+    margin-bottom: 32px;
   }
 
   .checkbox-privacy {
