@@ -1241,7 +1241,6 @@ input:checked + .checkbox-point {
   }
   .address-list ul{
   display: flex;
-  gap: 40px;
 }
   .address-list a {
     text-decoration: none;
